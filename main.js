@@ -30,29 +30,29 @@ function draw(){
     stroke("#FF0000");
 
     if(scoreRightWrist > 0.2)
-circle(rightWristx, rightWristy,20);
-if(rightWristY >0 && rightWristy <= 100){
+circle(rightWristx, rightWristY,20);
+if(rightWristY >0 && rightWristY <= 100){
 document.getElementById("speed").innerHTML ="Speed=0.5x"; 
 song.rate(0.5);
 }
-else if(rightWristY >100 && rightwristy <= 200){
+else if(rightWristY >100 && rightWristY <= 200){
 document.getElementById("speed").innerHTML = "Speed = 1x";
 song.rate(1);
 }
-else if(rightwristy >200 && rightwristy <- 300){
+else if(rightwristy >200 && rightWristY <- 300){
 document.getElementById("speed").innerHTML = "Speed=1.5x";
 song.rate(1.5);
 }
-else if(rightwristy >200 && rightwristy <- 400){
+else if(rightwristy >200 && rightWristY <- 400){
 document.getElementById("speed").innerHTML = "Speed=2x";
 song.rate(2);
 }
 
 if(scoreLeftWrist > 0.2)
 {
-circle(leftWristx, leftWristy, 20);
-InNumberleftWristY = Number(leftWristy);
-remove_decimals=floor (InNumberleftWristy);
+circle(leftWristx, leftWristY, 20);
+InNumberleftWristY = Number(leftWristY);
+remove_decimals=floor (InNumberleftWristY);
 volume = remove_decimals/500;
 document.getElementById("volume").innerHTML = "Volume ="+volume;
 song.setVolume(volume);
