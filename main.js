@@ -29,7 +29,7 @@ function modelLoaded(){
 }
 
 function draw(){
-    image(video, 0, 0, 600, 550);
+    image(video, 0, 0, 500, 550);
     fill("#FF0000");
     stroke("#FF0000");
     song1_status=song1.isPlaying();
